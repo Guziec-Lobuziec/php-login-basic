@@ -20,10 +20,10 @@
     if($user->checkPassword($password)){
       $responseData = ['login' => 0, 'message'=>'Zalogowano'];
     } else {
-      $responseData = ['login' => 1, 'message'=>'Złe hasło'];
+      $responseData = ['login' => 1, 'message'=>'Nieprawidłowe hasło'];
     }
   } else {
-    $responseData = ['login' => 2, 'message'=>'Zły login'];
+    $responseData = ['login' => 2, 'message'=>'Nieprawidłowy login'];
   }
 
   header('Content-type: application/json');

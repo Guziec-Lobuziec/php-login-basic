@@ -70,8 +70,8 @@
 <body>
   <div class="container mt-2">
     <div class="row">
-      <div class="col"></div>
-      <div class="col border border-primary rounded bg-light">
+      <div class="col-md"></div>
+      <div class="col-md border border-primary rounded bg-light p-3">
         <form id="login-form" class="text-center" action="api/login.php" method="post">
             <div class="row h-25 mb-5">
               <div class="col form-group">
@@ -85,7 +85,7 @@
                 <input name="password" id="password" class="form-control" type="password">
               </div>
             </div>
-            <div class="row h-auto">
+            <div class="row h-auto mb-1">
               <div class="col">
                 <input class="btn btn-primary" type="submit" value="Zaloguj">
               </div>
@@ -97,7 +97,7 @@
             </div>
         </form>
       </div>
-      <div class="col"></div>
+      <div class="col-md"></div>
     </div>
   </div>
 </body>

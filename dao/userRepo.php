@@ -44,10 +44,7 @@ class UserRepo {
     }
   }
 
-  public function addUser($login, $password) {
-
-    $user = new User();
-    $user->setLogin($login)->setPassword($password);
+  public function addUser($user) {
 
     $stmt = $this->pdo->prepare(self::$insert);
     $stmt->execute([$user->login, $user->passwordSHA256, $user->salt]);
